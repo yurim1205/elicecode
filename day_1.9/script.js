@@ -24,7 +24,7 @@ addForm.addEventListener('submit', e => {
     console.log(memo);
     // saveMemo(memo);
 
-    //비어있는 메모 방지.
+    //비어있는 메모 방지
     if (memo.length) {
         //문자가 존재한다면
         saveMemo(memo);
@@ -39,10 +39,9 @@ addForm.addEventListener('submit', e => {
 })
 
 list.addEventListener('click', e => {
-    //e.target.classList.contains('delete') 포함하고 있다면 ==> 삭제
+    //e.target.classList.contains('delete') 포함하고 있다면 삭제
     if (e.target.classList.contains('delete')) {
-        //삭제해라. 
-        // e.target.remove();
+        //삭제
         e.target.parentElement.remove();
     }
 })
