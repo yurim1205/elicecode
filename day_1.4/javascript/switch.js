@@ -15,6 +15,6 @@ function Category(category){
             break;
     }
 
-    console.log(0);
-    console.log(1);
+    Category(0);
+    Category(1);
 }
